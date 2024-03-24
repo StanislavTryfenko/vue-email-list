@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang='en'>
+<head>
+<meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<title>Document</title>
+</head>
+<body>
+<div id='app'>
+    <button @click="generateEmailList()">crea 10 email</button>
+    <ul>
+        <li v-for="email in emailList">{{email}}</li>
+    </ul>
+</div>
+<!-- Development only cdn, disable in production -->
+<script src='https://unpkg.com/vue@3/dist/vue.global.js'></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.8/axios.min.js"></script>
+<script src='./assets/main.js'></script>
+</body>
+</html>
